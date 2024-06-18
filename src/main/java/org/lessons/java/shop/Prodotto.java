@@ -1,7 +1,5 @@
 package org.lessons.java.shop;
 
-import java.util.Random;
-
 public class Prodotto {
 	
 	//Dichiarazione degli attributi della classe
