@@ -117,6 +117,15 @@ public class Prodotto {
 		return fullName;
 	}
 	
+	public String getFullProdName() {
+		
+		//Dichiariamo una variabile locale che conterrà il nome completo del prodotto
+		String fullName = String.format("%d-%s",getProdCode() ,prodName);
+		
+		return fullName;
+	}
+	
+	
 	
 	
 	
