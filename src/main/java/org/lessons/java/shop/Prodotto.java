@@ -120,7 +120,7 @@ public class Prodotto {
 	public String getFullProdName() {
 		
 		//Dichiariamo una variabile locale che conterrà il nome completo del prodotto
-		String fullName = String.format("%d-%s",getProdCode() ,prodName);
+		String fullName = String.format("%08d-%s",getProdCode() ,prodName);
 		
 		return fullName;
 	}
