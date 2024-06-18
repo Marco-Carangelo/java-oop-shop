@@ -2,10 +2,15 @@ package org.lessons.java.shop;
 
 public class ProdUtils {
 	
+	//Metodo per generare un numero random tra un valore minimo ed un massimo
+	
 	static public int randomCodeGenerator( int min, int max) {
 				
 		return (int) (Math.random() * (max - min + 1)) + min;
 	}
+	
+	
+	
 	
 	//Metodo che prende come argomento un codice numerico e, se ha meno di 8 cifre, aggiunge 0 a sinistra per il numero di cifre mancanti 
 	static public String paddingCode(int code) {
