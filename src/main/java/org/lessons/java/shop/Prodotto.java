@@ -16,17 +16,15 @@ public class Prodotto {
 	//Metodo costruttore della classe
 	
 	public Prodotto(String prodName,String prodInfo,float prodPrice,int prodIva) {
-			
-		//Dichiarazione di una variabile locale per contenere un'istanza di Random
-		Random r = new Random();
-			
-		//Assegnazione di un valore random compreso tra le costanti MIN = 10000000 e Max = 99999999
+
+		//Assegnazione a prodCode di un valore random compreso tra le costanti MIN = 0 e Max = 99999999
 		
 		final int MIN = 0;
 		final int MAX = 99999999;
 		
-		this.prodCode= (int) (r.nextDouble() * (MAX - MIN + 1)) + MIN;
+		this.prodCode= ProdUtils.randomCodeGenerator(MIN, MAX);
 			
+		
 		//Assegnazione degli altri attributi del metodo
 		this.prodName =prodName;
 		this.prodInfo=prodInfo;
@@ -91,7 +89,7 @@ public class Prodotto {
 
 
 
-	//L'attributo per il codice del prodotto sarà accessibile in sola lettura, quindi avrà solo il metodo setter
+	//L'attributo per il codice del prodotto sarà accessibile in sola lettura, quindi avrà solo il metodo getter
 	public int getProdCode() {
 		return prodCode;
 	}
