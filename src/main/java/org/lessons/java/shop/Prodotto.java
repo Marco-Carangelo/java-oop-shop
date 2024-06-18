@@ -34,19 +34,15 @@ public class Prodotto {
 		this.prodIva=prodIva;
 	}
 	
-	
+	//***METODI GETTER E SETTER
 	
 		
-	//Metodo per avare il prezzo base
 		
 	public String getProdName() {
 		return prodName;
 	}
 
-
-	//***METODI GETTER E SETTER DEGLI ATTRIBUTI DEGLI OGGETTI
 	
-	//L'attributo per il codice del prodotto sarà accessibile in sola lettura, qui avra solo il metodo setter
 	public void setProdName(String prodName) {
 		this.prodName = prodName;
 	}
@@ -67,7 +63,7 @@ public class Prodotto {
 
 
 
-
+	//Metodo per avare il prezzo base
 	public float getProdPrice() {
 		return prodPrice;
 	}
@@ -95,7 +91,7 @@ public class Prodotto {
 
 
 
-
+	//L'attributo per il codice del prodotto sarà accessibile in sola lettura, quindi avrà solo il metodo setter
 	public int getProdCode() {
 		return prodCode;
 	}
