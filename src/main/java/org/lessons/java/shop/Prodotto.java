@@ -132,4 +132,21 @@ public class Prodotto {
 		return paddedCode;
 	}
 	
+	//Overload del metodo, in modo che accetti argomenti anche in altri formati
+	
+	static public String paddingCode(String code) {
+		
+		String paddedCode = String.format("%08s",code);
+		
+		return paddedCode;
+	}
+	
+	static public String paddingCode(Short code) {
+		
+		String paddedCode = String.format("%08d",code);
+		
+		return paddedCode;
+	}
+	
+	
 }
