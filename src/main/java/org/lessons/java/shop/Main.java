@@ -60,7 +60,7 @@ public class Main {
 		
 		//Trasformiamo il codice numerico in una stringa ed aggiungiamo l'eventuale padding nel caso fosse formato da meno di 8 cifre
 		
-		String paddedCode= Prodotto.paddingCode(userProd.getProdCode());
+		String paddedCode= ProdUtils.paddingCode(userProd.getProdCode());
 		
 		//Richiamiamo il metodo per stampare il nome completo del prodotto
 		System.out.println("L'identificativo completo del prodotto è: " + userProd.getFullProdName(paddedCode));
