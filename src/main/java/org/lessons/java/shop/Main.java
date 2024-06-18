@@ -64,6 +64,30 @@ public class Main {
 		
 		//Richiamiamo il metodo per stampare il nome completo del prodotto
 		System.out.println("L'identificativo completo del prodotto è: " + userProd.getFullProdName(paddedCode));
+		
+		
+		
+		
+		//GESTIONE DEL REGISTRO PRODOTTI
+		
+		System.out.println("\n\n\nREGISTRO PRODOTTI: ");
+		
+		//Creiamo un'istanza del registro prodotti che inizialmente sarà vuota
+		
+		ListaProdotti lista = new ListaProdotti();
+		
+		//Creiamo due nuove istanze della classe Prodotto e popoliamone i campi
+		
+		Prodotto userProd2 = new Prodotto("Scarlet2i2","Scheda audio carina",150,22);
+		Prodotto userProd3 = new Prodotto("Zoom-U22","Scheda audio brutta",50,22);
+		
+		//Richiamiamo il metodo per aggiungere tutti i prodotti che abbiamo a disposizione fino ad ora
+		
+		lista.aggiungiProdotti(userProd,userProd2,userProd3);
+		
+		//Richiamiamo il metodo per stampare la lista di tutti i prodotti nel registro
+		
+		lista.stampaProdotti();
 				
 		scanner.close();
 	}
